@@ -205,8 +205,10 @@ footer {
 }
 
 
-/* ===  página quartos === */
 
+
+
+/* ===  página quartos === */
 .section-bg-image-quarto {
     margin-top: 60px;
     background-image: url("/assets/img/img-fundo.jpg");
@@ -290,11 +292,6 @@ footer {
         margin-left: 10px;
     }
 
-
-
-
-
-
     /* ===  5ª seção footer === */
     .footer-block {
         flex-direction: column;
@@ -314,14 +311,19 @@ footer {
         width: 25px;
         height: 25px;
     }
+
+    /* ===  página quartos === */
+    .bedrooms-info li {
+        width: calc(100% / 2);
+    }
 }
 
-@media (max-width: 600px) {
 
+
+@media (max-width: 600px) {
     /* ===  2ª seção === */
-    
-    .bedrooms-header p{
-      font-size: 1.1em;
+    .bedrooms-header p {
+        font-size: 1.1em;
         line-height: 30px;
     }
 
@@ -334,4 +336,22 @@ footer {
         width: 90%;
     }
 
+    /* ===  página quartos === */
+    .image-bedrooms {
+        flex-direction: column;
+    }
+
+    .image-bedrooms img {
+        width: 99%;
+        margin: 5px auto;
+    }
+
+    .bedrooms-info li {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section-quartos {
+        margin: 80px 0;
+    }
 }
