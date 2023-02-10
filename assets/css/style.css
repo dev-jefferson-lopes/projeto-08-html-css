@@ -202,10 +202,46 @@ footer{
     margin-bottom: 0px;
 }
 
+
+/* ===  página quartos === */
+
 .section-bg-image-quarto{
     margin-top: 60px;
     background-image: url("/assets/img/img-fundo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
+}
+
+.image-bedrooms{
+    display: flex;
+    margin: 30px 0;
+}
+
+.image-bedrooms img{
+    width: calc(100% / 3 - 6px);
+    margin: 0 3px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bedrooms-info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+}
+
+.bedrooms-info li{
+    width: calc(100% / 4);
+}
+
+.section-quartos{
+    margin: 50px 0;
+}
+
+.section-quartos ul li{
+    list-style: disc;
 }
