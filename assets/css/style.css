@@ -132,7 +132,6 @@ iframe{
 }
 
 /* ===  4ª seção === */
-
 .about-block{
     display: flex;
     flex-wrap: wrap;
@@ -158,3 +157,47 @@ iframe{
     margin-left: 10px;
 }
 
+/* ===  5ª seção === */
+footer{
+         background-color: #49997d;
+        color:#fff;
+}
+
+.footer-block{
+    display: flex;
+    align-items: center;
+}
+
+.footer-block h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer-block-content{
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block-content a{
+    color: #fff;
+    display: flex;
+    width: calc(100% / 3);
+    align-items: center;
+}
+
+.footer-block-content a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.Copyright{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #3b7863;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 0px;
+}
