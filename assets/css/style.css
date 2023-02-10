@@ -18,7 +18,23 @@ body {
     margin: 0 auto;
 }
 
-/* ===  1ª seção === */
+.text-center{
+    text-align: center;
+}
+
+/* === global === */
+h3{
+    font-size: 2.5em;
+    margin: 30px 0 20px;
+    font-weight: 400;
+}
+
+p{
+    line-height: 20px;
+}
+
+
+/* ===  top menu seção === */
 .top-header {
     position: fixed;
     background-color: #fff;
@@ -57,7 +73,7 @@ body {
 border-bottom: 3px solid #6592c9;
 }
 
-/* ===  2ª seção === */
+/* ===  1ª seção === */
 .section-bg-image {
     margin-top: 60px;
     background-image: url("/assets/img/img-fundo.jpg");
@@ -85,3 +101,60 @@ border-bottom: 3px solid #6592c9;
     font-weight: 700;
     line-height: 30px;
 }
+
+/* ===  2ª seção === */
+.bedrooms{
+    display: flex;
+}
+
+.bedrooms div{
+    width: calc(100% / 3 - 10px);
+    margin: 30px 10px;
+    border-bottom: 3px solid #3d3d3d;
+ }
+
+.bedrooms div img{
+    width: 100%;
+}
+
+.bedrooms div p{
+    padding-bottom: 20px;
+}
+
+.bedrooms div p a{
+    font-size: 1.2em;
+    color: #3d3d3d;
+}
+
+/* ===  3ª seção === */
+iframe{
+    margin-top: 30px;
+}
+
+/* ===  4ª seção === */
+
+.about-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.block{
+    display: flex;
+    width: 45%;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+.block-desc h4{
+    font-size: 1.3em;
+}
+
+.block img{
+    width: 100px;
+    height: 113px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
