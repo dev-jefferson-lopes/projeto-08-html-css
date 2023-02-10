@@ -13,23 +13,23 @@ body {
 }
 
 .section-container {
-    width: 100%;
+    width: 98%;
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /* === global === */
-h3{
+h3 {
     font-size: 2.5em;
     margin: 30px 0 20px;
     font-weight: 400;
 }
 
-p{
+p {
     line-height: 20px;
 }
 
@@ -69,8 +69,9 @@ p{
     font-size: 1em;
     padding: 0px 15px 10px;
 }
-.top-header-content li a:hover{
-border-bottom: 3px solid #6592c9;
+
+.top-header-content li a:hover {
+    border-bottom: 3px solid #6592c9;
 }
 
 /* ===  1ª seção === */
@@ -103,96 +104,97 @@ border-bottom: 3px solid #6592c9;
 }
 
 /* ===  2ª seção === */
-.bedrooms{
+.bedrooms {
     display: flex;
 }
 
-.bedrooms div{
+.bedrooms div {
     width: calc(100% / 3 - 10px);
     margin: 30px 10px;
     border-bottom: 3px solid #3d3d3d;
- }
+}
 
-.bedrooms div img{
+.bedrooms div img {
     width: 100%;
 }
 
-.bedrooms div p{
+.bedrooms div p {
     padding-bottom: 20px;
 }
 
-.bedrooms div p a{
+.bedrooms div p a {
     font-size: 1.2em;
     color: #3d3d3d;
 }
 
 /* ===  3ª seção === */
-iframe{
+iframe {
     margin-top: 30px;
 }
 
 /* ===  4ª seção === */
-.about-block{
+.about-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0;
 }
 
-.block{
+.block {
     display: flex;
     width: 45%;
     margin: 0 10px;
     justify-content: space-between;
 }
 
-.block-desc h4{
+.block-desc h4 {
     font-size: 1.3em;
 }
 
-.block img{
+.block img {
     width: 100px;
     height: 113px;
     object-fit: cover;
     margin-left: 10px;
 }
 
-/* ===  5ª seção === */
-footer{
-         background-color: #49997d;
-        color:#fff;
+/* ===  5ª seção footer === */
+footer {
+    background-color: #49997d;
+    color: #fff;
 }
 
-.footer-block{
+.footer-block {
     display: flex;
     align-items: center;
 }
 
-.footer-block h3{
+.footer-block h3 {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.footer-block-content{
+.footer-block-content {
     flex-basis: 90%;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-block-content a{
+.footer-block-content a {
     color: #fff;
     display: flex;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
     align-items: center;
+    margin: 0 10px;
 }
 
-.footer-block-content a img{
+.footer-block-content a img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 
-.Copyright{
+.Copyright {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #3b7863;
@@ -205,7 +207,7 @@ footer{
 
 /* ===  página quartos === */
 
-.section-bg-image-quarto{
+.section-bg-image-quarto {
     margin-top: 60px;
     background-image: url("/assets/img/img-fundo.jpg");
     background-repeat: no-repeat;
@@ -213,35 +215,71 @@ footer{
     height: 200px;
 }
 
-.image-bedrooms{
+.image-bedrooms {
     display: flex;
     margin: 30px 0;
 }
 
-.image-bedrooms img{
+.image-bedrooms img {
     width: calc(100% / 3 - 6px);
     margin: 0 3px;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.bedrooms-info{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
+.bedrooms-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.bedrooms-info li{
+.bedrooms-info li {
     width: calc(100% / 4);
 }
 
-.section-quartos{
+.section-quartos {
     margin: 50px 0;
 }
 
-.section-quartos ul li{
+.section-quartos ul li {
     list-style: disc;
+}
+
+/* ===  melhorando a parte responsiva do site === */
+@media (max-width: 825px) {
+    /* ===  1ª seção === */
+    .section-bg-image {
+        background-position: center;
+    } 
+
+    .section-bg-image div h1 {
+        font-size: 2.5em;
+    }
+
+    .section-bg-image div h2 {
+        font-size: 1.2em;
+    }
+
+/* ===  5ª seção footer === */
+    .footer-block {
+        flex-direction: column;
+    }
+
+    .footer-block h3 {
+        margin-bottom: 40px;
+    }
+
+    .footer-block-content a {
+        width: calc(100% / 3 - 20px);
+        flex-direction: column;
+        font-size: .8em;
+    }
+
+    .footer-block-content a img {
+        width: 25px;
+        height: 25px;
+    }
 }
