@@ -250,10 +250,11 @@ footer {
 
 /* ===  melhorando a parte responsiva do site === */
 @media (max-width: 825px) {
+
     /* ===  1ª seção === */
     .section-bg-image {
         background-position: center;
-    } 
+    }
 
     .section-bg-image div h1 {
         font-size: 2.5em;
@@ -263,7 +264,38 @@ footer {
         font-size: 1.2em;
     }
 
-/* ===  5ª seção footer === */
+
+    iframe {
+        margin: 20px 0 50px;
+    }
+
+    /* ===  4ª seção === */
+    .about-block {
+        margin: 10px 0;
+    }
+
+    .block {
+        width: 95%;
+        align-items: center;
+    }
+
+    .block-desc h4 {
+        font-size: 1.3em;
+    }
+
+    .block img {
+        width: 100px;
+        height: 113px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+
+
+
+
+
+    /* ===  5ª seção footer === */
     .footer-block {
         flex-direction: column;
     }
@@ -282,4 +314,24 @@ footer {
         width: 25px;
         height: 25px;
     }
+}
+
+@media (max-width: 600px) {
+
+    /* ===  2ª seção === */
+    
+    .bedrooms-header p{
+      font-size: 1.1em;
+        line-height: 30px;
+    }
+
+    .bedrooms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bedrooms div {
+        width: 90%;
+    }
+
 }
